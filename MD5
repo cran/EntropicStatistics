@@ -1,0 +1,6 @@
+d3e971f0b1e9f7ee26a6d109d3178edd *DESCRIPTION
+43098ddffa6c7bdba2b0c9cd2f39bdbe *NAMESPACE
+1bbfada3ecdbba73831d9aaf85cf18b8 *R/HeatMap.R
+2b6e7265a01f61d31c747e5e94dfbfb5 *man/HeatMap.Rd
+5ec9ae708612f9eece2e43d64ffa54d9 *tests/testthat.R
+225e3812b897786befc574f805c96dc2 *tests/testthat/test-HeatMap.R
