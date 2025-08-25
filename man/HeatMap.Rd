@@ -15,7 +15,7 @@ HeatMap(
   RowNames = names(data_frequency_list)[plot_order],
   title = "HeatMap",
   x_ticks = round(stats::quantile(orders, c(0,0.25, 0.5, 0.75, 1)), 2),
-  plot_margin = margin(0.5,0.2,0.2,1, "cm"),
+  plot_margin = ggplot2::margin(0.5,0.2,0.2,1,"cm"),
   text_face = 1,
   fill_colors = c("blue4", "white", "red3"),
   title_text_size = 25,
@@ -65,10 +65,10 @@ HeatMap(
 This is a preliminary tool to identify distributional information from multiple groups simultaneuously without any parametric assumptions.
 }
 \value{
-A heatmap plot made with \code{ggplot2}.
+A \code{ggplot} object representing the heatmap.
 }
 \author{
-Jialin Zhang (JZ) at jzhang at math.msstate.edu.
+Jialin Zhang (JZ) <jzhang@math.msstate.edu>
 }
 
 \examples{
@@ -117,7 +117,7 @@ HeatMap(data_samples, selection = 14:18)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory (show via RShowDoc("KEYWORDS")):
-\keyword{heatmap}
-\keyword{gse}
+\concept{heatmap}
+\concept{gse}
 % For non-standard keywords, use \concept instead of \keyword:
 \concept{Entropic Statistics}

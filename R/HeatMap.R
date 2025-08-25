@@ -1,6 +1,6 @@
 #' @import ggplot2 ggrepel hrbrthemes tidyverse dplyr tidyr tibble
 #' @export
-HeatMap <- function(data_frequency_list, orders = seq(0.50, 3, by = 0.01), selection = 1:length(data_frequency_list), plot_order = selection, RowNames = names(data_frequency_list)[plot_order], title = "HeatMap", x_ticks = round(stats::quantile(orders, c(0,0.25, 0.5, 0.75, 1)), 2), plot_margin = margin(0.5,0.2,0.2,1, "cm"), text_face = 1, fill_colors = c("blue4", "white", "red3"), title_text_size = 25, label_text_size = 25){
+HeatMap <- function(data_frequency_list, orders = seq(0.50, 3, by = 0.01), selection = 1:length(data_frequency_list), plot_order = selection, RowNames = names(data_frequency_list)[plot_order], title = "HeatMap", x_ticks = round(stats::quantile(orders, c(0,0.25, 0.5, 0.75, 1)), 2), plot_margin = ggplot2::margin(0.5,0.2,0.2,1, "cm"), text_face = 1, fill_colors = c("blue4", "white", "red3"), title_text_size = 25, label_text_size = 25){
   generalized.entropy <- function(sample_freq, order){
     results <- vector()
     n <- sum(sample_freq)
