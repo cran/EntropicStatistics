@@ -1,21 +1,21 @@
 Package: EntropicStatistics
 Type: Package
 Title: Functions Based on Entropic Statistics
-Version: 0.1.1
+Version: 0.1.3
 Depends: R (>= 4.1.0)
 Authors@R: c(
-    person("Jialin", "Zhang (JZ)", , "jzhang@math.msstate.edu", role = c("aut", "cph", "cre"))
+    person("Jialin", "Zhang", email = "jzhang@math.msstate.edu", role = c("aut", "cph", "cre"))
     )
-Maintainer: Jialin Zhang (JZ) <jzhang@math.msstate.edu>
-Description: Contains methods for data analysis in entropic perspective. These entropic perspective methods are nonparametric, and perform better on non-ordinal data. Currently, the package has a function HeatMap() for visualizing distributional characteristics among multiple populations (groups).
+Description: Methods for data analysis from an entropic perspective. These methods are nonparametric and perform well on non-ordinal data. Currently includes 'HeatMap()' for visualizing distributional characteristics among multiple populations (groups).
 License: GPL-3
 Encoding: UTF-8
-Imports: ggplot2, ggrepel, dplyr, tidyr, tibble, hrbrthemes, tidyverse
+Imports: ggplot2, dplyr, tidyr, tibble, rlang
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2025-08-25 15:04:56 UTC; jz505
-Author: Jialin Zhang (JZ) [aut, cph, cre]
+Packaged: 2025-09-29 20:44:49 UTC; jz505
+Author: Jialin Zhang [aut, cph, cre]
+Maintainer: Jialin Zhang <jzhang@math.msstate.edu>
 Repository: CRAN
-Date/Publication: 2025-08-25 15:30:02 UTC
+Date/Publication: 2025-09-29 21:50:02 UTC
